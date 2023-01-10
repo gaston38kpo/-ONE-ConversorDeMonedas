@@ -21,8 +21,8 @@ public class CurrencyController {
 
         return treeMap;
     }
-    
-        public String[] getCodes() {
+
+    public String[] getCodes() {
         ArrayList<String> listaTemp = new ArrayList<>();
 
         getCurrenciesMap().forEach((code, description) -> {
@@ -58,7 +58,6 @@ public class CurrencyController {
         }
         return 0;
     }
-    
 
     public List<String> convertCurrency(String from, String to, String amount) {
 
@@ -71,15 +70,6 @@ public class CurrencyController {
 
         return new ArrayList<>(Arrays.asList(oldAmount, oldCurrency, newAmount, newCurrency));
 
-    }
-
-    public static void main(String[] args) {
-        CurrencyController control = new CurrencyController();
-        String[] lista = control.getCodeWithDescription();
-
-        for (String e : lista) {
-            System.out.println(e);
-        }
     }
 
 }
