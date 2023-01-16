@@ -10,7 +10,8 @@
   },
   {
     "Elementos usados": {
-      "Lenguaje": "Java 19",
+      "Lenguaje": "Java",
+      "Version": "OpenJDK 19",
       "GUI": "Swing",
       "Mucho": "♥"
     }
